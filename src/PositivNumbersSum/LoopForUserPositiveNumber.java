@@ -1,20 +1,24 @@
 package PositivNumbersSum;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class LoopForUserPositiveNumber {
     WhenMinus whenMinus = new WhenMinus();
-
+    List<Double> integerListLoopForUserPositiveNumber = new ArrayList<>();
     public void fromUserLoop() {
-        if (ScannerImputFromUser.scannerFromUser() > 0) {
-            do {
-                ScannerImputFromUser.scannerFromUser();
-                ListOfPositiveNumbers.integerList.add(ScannerImputFromUser.scannerFromUser());
+        double number = 0;
+        do {
+            number = ScannerImputFromUser.scannerFromUser();
+            ScannerImputFromUser.scannerFromUser();
 
-            } while (ScannerImputFromUser.scannerFromUser() > 0);
-        } else {
-            whenMinus.whenUserInputIsMinus();
-        }
+            integerListLoopForUserPositiveNumber.add(number);
 
+        } while (number > 0);
+
+        whenMinus.whenUserInputIsMinus();
     }
+
 }
 
 
