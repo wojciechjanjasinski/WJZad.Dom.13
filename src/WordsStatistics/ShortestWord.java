@@ -1,4 +1,4 @@
-package PositivNumbersSum;
+package WordsStatistics;
 
 import java.util.List;
 
