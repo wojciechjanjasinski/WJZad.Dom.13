@@ -5,7 +5,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.ListIterator;
 
-public class ListOne {
+public class ListOfPositiveNumbers {
     public static List<Double> integerList = new List<>() {
 
 
