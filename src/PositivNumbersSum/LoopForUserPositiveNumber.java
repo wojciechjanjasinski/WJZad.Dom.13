@@ -3,18 +3,18 @@ package PositivNumbersSum;
 import java.util.List;
 
 public class LoopForUserPositiveNumber {
-    WhenMinus whenMinus = new WhenMinus();
+    Summary summary = new Summary();
+
     public void fromUserLoop(List<Double> listOfPositiveNumbers) {
         double number;
         do {
             number = ScannerImputFromUser.scannerFromUser();
-            ScannerImputFromUser.scannerFromUser();
-
-            listOfPositiveNumbers.add(number);
-
+            if (number > 0) {
+                listOfPositiveNumbers.add(number);
+            }
         } while (number > 0);
 
-        whenMinus.whenUserInputIsMinus(listOfPositiveNumbers);
+        summary.displaySummaryI(listOfPositiveNumbers);
     }
 
 }
